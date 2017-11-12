@@ -31,8 +31,9 @@ app.use(bodyParser.json({
   type: "application/vnd.api+json"
 }));
 
-require("./api/api-routes.js")(app, db);
-require("./scraper.js") (app, db);
+require("./api/articles");
+require('./api/notes');
+require("./api/scraper.js");
 
 
 app.listen(port);
