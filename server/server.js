@@ -20,10 +20,6 @@ db.once('open', function () {
   // we're connected!
 });
 
-
-
-app.use(bodyParser()); 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
