@@ -13,10 +13,10 @@ router.get("/scrape", function (req, res) {
     $(".headline a").each(function (i, element) {
 
       var title = $(element).text().trim();
-      var link = $(element).attr("href");
+      var url = $(element).attr("href");
 
       // If this found element had both a title and a link
-      articles.push({ title, link });
+      articles.push({ title, url });
     });
 
     res.json(articles);

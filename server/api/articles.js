@@ -3,7 +3,7 @@ const Article = require('../config/models/article');
 
 router.get('/articles', function(req, res) {
   Article.find({}, function(err, articles){
-    req.json(articles);
+    res.json(articles);
   });
 });
 
