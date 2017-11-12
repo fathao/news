@@ -10,10 +10,8 @@ router.get('/notes/:articleid', function(req, res) {
 
 router.post('/note', function (req, res) {
   const { content, articleid } = req.body;
-  var note = new Note();
-  note.content = content;
-  note.article = articleid;
-  note.save(function (err, note) {
+  const newNote = { content: content, article: articleid };
+  Note.create(newNote, function(err, note) {
     if (err) throw err;
     res.json({ id: note._id });
   });

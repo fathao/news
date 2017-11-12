@@ -53,6 +53,10 @@ mongoose.connect('mongodb://127.0.0.1:27017');
 //   console.log(res);
 // })
 
-Article.find({}).select('title').exec(function (err, articles) {
-  console.log(articles);
+// Article.find({}).select('title').exec(function (err, articles) {
+//   console.log(articles);
+// });
+
+Note.find({}, function(err, notes) {
+  console.log(notes);
 });
