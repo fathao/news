@@ -23,3 +23,5 @@ router.delete('article/:id', function (req, res) {
     article.remove();
   });
 });
+
+module.exports = router;

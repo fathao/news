@@ -23,3 +23,5 @@ router.delete('note/:id', function (req, res) {
     note.remove();
   });
 });
+
+module.exports = router;
