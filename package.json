@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/fathao/news/issues"
   },
-  "homepage": "https://github.com/fathao/news#readme"
+  "homepage": "https://github.com/fathao/news#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.1",
+    "request": "^2.83.0"
+  }
 }
