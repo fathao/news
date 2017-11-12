@@ -11,6 +11,7 @@ var app = express();
 // var collections = ["scrapedData"];
 
 app.use('/api', router);
+app.use(express.static('./client/build'));
 
 mongoose.connect('mongodb://127.0.0.1:27017');
 var db = mongoose.connection;
